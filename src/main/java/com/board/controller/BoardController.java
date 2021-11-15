@@ -151,5 +151,13 @@ public class BoardController extends UiUtils {
 			throw new RuntimeException("시스템에 문제가 발생하였습니다.");
 		}
 	}
+	
+	@GetMapping(value = "/board/canvas.do")
+	public String openCanvas(@ModelAttribute("params") BoardDTO params, Model model) {
+		//List<BoardDTO> boardList = boardService.getBoardList(params);
+		//model.addAttribute("boardList", boardList);
+
+		return "board/canvas";
+	}		
 
 }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">;
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>title</title>
+
+</head>
+<body>
+<!-- 서명 공간 -->
+<div style="width:200px; height:200px;">
+<canvas id="canvas" style="border:1px solid black"></canvas>
+</div>
+<div>
+<!-- 저장 버튼 -->
+<button id="save">save</button>
+<div>
+
+<script th:src="@{/scripts/jquery.min.js}"></script>
+<script th:src="@{/scripts/canvas.js}"></script>
+</body>
+</html>
